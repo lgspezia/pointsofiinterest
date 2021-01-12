@@ -1,4 +1,4 @@
-# Map2
+# Points Of Interest
 
 This project was generated with [Angular CLI].
 
