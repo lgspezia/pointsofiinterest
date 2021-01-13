@@ -21,7 +21,7 @@ interface Location {
   address_country?: string;
   address_zip?: string;
   address_state?: string;
-  marker?: Marker;
+  marker?: Marker[];
 }
 
 interface Vehicle {
@@ -42,14 +42,21 @@ export class MapComponent implements OnInit {
   circleRadius:number = 3500; // km
   geocoder:any;
   dataatual = new Date();
+
   public location:Location = {
     lat: -30,
     lng: -60,
-    marker: {
+    marker: [{
       lat: -30.01,
       lng: -60.02,
       draggable: false
     },
+    {
+      lat: -30.03,
+      lng: -59.99,
+      draggable: false
+    },
+  ],
     zoom: 12
   };
 
@@ -59,7 +66,13 @@ export class MapComponent implements OnInit {
     placa: "AVO-0372",
     data: this.dataatual.toUTCString(),
   };
-// data toUTCString
+
+public vehicle2:Vehicle = {
+  lat: 51.6980205405271,
+  lng: 25.46496636999715,
+  placa: "AVO-0350",
+  data: this.dataatual.toUTCString(),
+};
 
   @ViewChild(AgmMap) map: AgmMap;
 
