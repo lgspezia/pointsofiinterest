@@ -4,13 +4,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.guides.springboot2</groupId>
-	<artifactId>springboot2-jpa-crud-example</artifactId>
+	<groupId>com.poi.springboot</groupId>
+	<artifactId>springboot-jpa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springboot2-jpa-crud-example</name>
-	<description>Demo project for Spring Boot</description>
+	<name>springboot-jpa</name>
+	<description>Spring Boot Project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
