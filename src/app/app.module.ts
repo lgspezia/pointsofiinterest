@@ -18,7 +18,8 @@ import { MapComponent } from './map/map.component';
     BrowserModule,
     // add
     FormsModule,
-    AgmCoreModule.forRoot({apiKey: 'AIzaSyCDQojzFLTtVRnSoMgVQ5GNZlXMVO1cktE'}),
+    AgmCoreModule.forRoot({apiKey: ''}),
+    // AIzaSyCDQojzFLTtVRnSoMgVQ5GNZlXMVO1cktE
     // NgbModule.forRoot()
   ],
   providers: [
